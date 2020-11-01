@@ -3,7 +3,7 @@ import * as PhotoSwipe from 'photoswipe/dist/photoswipe';
 import * as PhotoSwipeUI_Default from 'photoswipe/dist/photoswipe-ui-default.min';
 import { Image } from '../../models/image.model';
 import { NgxPhotoswipeService } from '../../services/ngx-photoswipe.service';
-import { LightboxAdapter } from '../../adpters/lightbox-adapter';
+import { LightboxAdapter } from '../../adapters/lightbox-adapter';
 
 @Component({
     selector: 'ngxps-gallery',

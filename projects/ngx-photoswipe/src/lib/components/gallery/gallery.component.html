@@ -1,13 +1,21 @@
 <div class="row" #ngxpsGallery>
   <div class="col-md-12">
     <div class="ngx-gallery" [ngClass]="{'no-margin': typeIsNoMargin()}">
-      <figure class="col-md-2" *ngFor="let image of images; let idx = index">
+      <!-- <figure class="col-md-2" *ngFor="let image of images; let idx = index">
         <a [href]="image.img" data-size="4934x3296" (click)="onClickImage(image, idx)">
           <img class="img-fluid" [src]="image.thumb" [alt]="image.description">
         </a>
-      </figure>
+      </figure> -->
 
-      <ng-content></ng-content>
+      <mat-grid-list cols="4" rowHeight="1:1" *ngIf="images.length">
+        <mat-grid-tile *ngFor="let image of images; let idx = index">
+          <a [href]="image.img" (click)="onClickImage(image, idx)">
+            <img [src]="image.thumb" [alt]="image.description">
+          </a>
+        </mat-grid-tile>
+      </mat-grid-list>
+
+      <!-- <ng-content></ng-content> -->
     </div>
   </div>
 </div>

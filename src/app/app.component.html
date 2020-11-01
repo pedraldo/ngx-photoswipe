@@ -6,7 +6,10 @@
 </div>
 
 <div class="container-fluid">
-  <ngxps-gallery [images]="images" ></ngxps-gallery>
+  <div>
+    <button (click)="addPhoto()">Add Photo</button>
+  </div>
+  <ngxps-gallery [images]="images" type='no-margin'></ngxps-gallery>
 </div>
 
 <ngxps-lightbox></ngxps-lightbox>

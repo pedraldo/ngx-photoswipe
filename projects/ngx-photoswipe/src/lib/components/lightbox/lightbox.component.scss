@@ -10,3 +10,8 @@ $pswp__include-minimal-style: true;
 
 @import "../../../../../../node_modules/photoswipe/src/css/main";
 @import "../../../../../../node_modules/photoswipe/src/css/default-skin/default-skin";
+
+.pswp img {
+  max-width: none;
+  object-fit: contain;
+}

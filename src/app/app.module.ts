@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { NgxPhotoswipeModule } from 'ngx-photoswipe';
+import { NgxPhotoswipeModule } from '../../projects/ngx-photoswipe/src/public-api';
 
 @NgModule({
     declarations: [AppComponent],
